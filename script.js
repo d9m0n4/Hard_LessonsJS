@@ -1,8 +1,3 @@
-// let num = 266219;
-
-// let arr = Array.from(num);
-// console.log(arr);
-
 var number = 266219;
 
 var array = number.toString()
