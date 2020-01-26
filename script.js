@@ -1,6 +1,6 @@
-var number = 266219;
+let number = 266219;
 
-var array = number.toString()
+let array = number.toString()
   .split('')
   .map(function (item, index) {
     return parseInt(item);
