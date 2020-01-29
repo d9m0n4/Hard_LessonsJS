@@ -1,16 +1,26 @@
 'usestrict';
 
-function checkStr(data) {
-  if (typeof data === 'string'){
-    let str = data.trim();
-    if (str.length > 30){
-      str = str.substr(0, 30) + '...';
+let arr =['123', '43', '51', '21', '146', '91', '211'];
+
+for (let i = 0; i < arr.length; i++){
+  if (arr[i][0] === '2' || arr[i][0] === '4') {
+    console.log(arr[i]);
+  }
+
+}
+
+
+for (let i = 0; i <= 100; i++) {
+  let count = 0;
+  for (let j = 2; j <= i; j++) {
+    if (i % j) { 
+      continue; 
     }
-    return str;
-  }else {
-    alert('Это не строка!!!');
-    return;
+    count += 1;
+  }
+  if (count === 1) {
+    console.log(i + ' - ' + ' Делитель этого числа: 1 и ' + i);
+    
   }
 }
-let questStr = prompt('Введите данные');
-console.log(checkStr(questStr));
+
